@@ -12,6 +12,9 @@ class LoginController extends Controller
     }
     public function authenticate(Request $request): RedirectResponse
     {
+        // var_dump($request->email);
+        // var_dump($request->password);
+        // die;
 
         $credentials = $request->validate([
             'email' => ['required', 'email'],
