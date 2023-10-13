@@ -7,8 +7,12 @@ use Illuminate\Http\RedirectResponse;
 
 class LoginController extends Controller
 {
+    public function index(){
+        return view('login/form-login');
+    }
     public function authenticate(Request $request): RedirectResponse
     {
+
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
