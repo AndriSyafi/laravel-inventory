@@ -15,7 +15,7 @@
 
 
 <main class="form-signin w-50 m-auto">
-  <form method="POST" action="{{ route('kirim-data-login')}}">
+  <form method="POST" action="{{ route('login')}}">
     @csrf
     <img class="mb-4" src="{{asset ('image/gambar1.jpeg') }}" alt="" width="90" height="70">
     <br> {{ $errors->first('email')}}
