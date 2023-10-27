@@ -9,5 +9,6 @@ class MasterBarangModel extends Model
 {
     use HasFactory;
     protected $table = 'master_barang';
-    public $timestamp = false ;
+    public $timestamps = false ;
+    protected $guarded = ['id'];
 }
