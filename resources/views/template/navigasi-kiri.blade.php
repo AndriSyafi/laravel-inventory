@@ -7,7 +7,7 @@
                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                 Dashboard
             </a>
-            <a class="nav-link {{ (Request::segment(1)== 'dashboard')? 'active' : '' }}"
+            <a class="nav-link {{ (Request::segment(1)== 'master')? 'active' : '' }}"
              href="{{url('/master')}}">
                 <div class="sb-nav-link-icon"><i class="fa-solid fa-database"></i></div>
                 Master Data
